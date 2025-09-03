@@ -19,7 +19,7 @@ body {
     right: 0;
     z-index: 1000;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
     background: transparent;
@@ -49,6 +49,11 @@ body {
 
 .nav-center a:hover {
     color: #ffffff;
+}
+
+.nav-left {
+    display: flex;
+    gap: 20px;
 }
 
 .nav-right {
