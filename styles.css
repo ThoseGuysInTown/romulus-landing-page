@@ -102,8 +102,8 @@ body {
 }
 
 .art-piece {
-    width: 120px;
-    height: 80px;
+    width: 192px;
+    height: 128px;
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
     transition: transform 0.3s ease;
@@ -119,33 +119,33 @@ body {
 
 .art-2 {
     background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Les_Demoiselles_d%27Avignon.jpg/516px-Les_Demoiselles_d%27Avignon.jpg');
-    width: 100px;
-    height: 100px;
+    width: 160px;
+    height: 160px;
 }
 
 .art-3 {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg');
-    width: 140px;
-    height: 90px;
+    width: 224px;
+    height: 144px;
 }
 
 .art-4 {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg/471px-Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg');
-    width: 110px;
-    height: 110px;
+    width: 176px;
+    height: 176px;
     border-radius: 50%;
 }
 
 .art-5 {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg/1200px-Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg');
-    width: 90px;
-    height: 120px;
+    width: 144px;
+    height: 192px;
 }
 
 .art-6 {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/The_Great_Wave_off_Kanagawa.jpg/1280px-The_Great_Wave_off_Kanagawa.jpg');
-    width: 80px;
-    height: 80px;
+    width: 128px;
+    height: 128px;
     border-radius: 50%;
 }
 
@@ -235,8 +235,8 @@ body {
     }
     
     .art-piece {
-        width: 80px;
-        height: 60px;
+        width: 128px;
+        height: 96px;
     }
     
     .footer {
@@ -258,8 +258,8 @@ body {
     }
     
     .art-piece {
-        width: 60px;
-        height: 45px;
+        width: 96px;
+        height: 72px;
     }
     
     .floating-item {
