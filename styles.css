@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #0a0a0a;
+    color: #ffffff;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 40px;
+    background: transparent;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.nav-center {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-center a {
+    color: #888;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.nav-center a:hover {
+    color: #ffffff;
+}
+
+.nav-right {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: #888;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+}
+
+.nav-link-highlighted {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+.nav-link-highlighted:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(ellipse at center, #1a1a1a 0%, #0a0a0a 70%);
+}
+
+.floating-elements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.floating-item {
+    position: absolute;
+    opacity: 0.8;
+}
+
+.art-piece {
+    width: 120px;
+    height: 80px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.art-1 {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/687px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg');
+}
+
+.art-2 {
+    background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Les_Demoiselles_d%27Avignon.jpg/516px-Les_Demoiselles_d%27Avignon.jpg');
+    width: 100px;
+    height: 100px;
+}
+
+.art-3 {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg');
+    width: 140px;
+    height: 90px;
+}
+
+.art-4 {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg/471px-Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg');
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+}
+
+.art-5 {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg/1200px-Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg');
+    width: 90px;
+    height: 120px;
+}
+
+.art-6 {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/The_Great_Wave_off_Kanagawa.jpg/1280px-The_Great_Wave_off_Kanagawa.jpg');
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.hero-content {
+    text-align: center;
+    z-index: 100;
+    position: relative;
+}
+
+.hero-title {
+    font-size: clamp(4rem, 12vw, 8rem);
+    font-weight: 900;
+    letter-spacing: 0.02em;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #ffffff, #cccccc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-subtitle {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+    color: #aaa;
+}
+
+.highlight {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 4px 12px;
+    border-radius: 20px;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.hero-tagline {
+    font-size: 1rem;
+    color: #666;
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgba(10, 10, 10, 0.9);
+    backdrop-filter: blur(10px);
+}
+
+.footer a {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ffffff;
+}
+
+.footer-right {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+    
+    .nav-center {
+        gap: 20px;
+    }
+    
+    .nav-right {
+        gap: 15px;
+    }
+    
+    .hero-title {
+        font-size: clamp(3rem, 10vw, 6rem);
+    }
+    
+    .art-piece {
+        width: 80px;
+        height: 60px;
+    }
+    
+    .footer {
+        padding: 15px 20px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .footer-center {
+        order: 3;
+        flex-basis: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-center {
+        display: none;
+    }
+    
+    .art-piece {
+        width: 60px;
+        height: 45px;
+    }
+    
+    .floating-item {
+        opacity: 0.6;
+    }
+}
